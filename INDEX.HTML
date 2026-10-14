@@ -1,1 +1,107 @@
 
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PRO IT UZ — Uchqunbek Moxirjonov</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#08111f;color:white;font-family:Arial}
+header{padding:20px;background:#10213a;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:25px;color:#00e5ff;font-weight:bold}
+nav a{color:white;text-decoration:none;margin:7px}
+.hero{text-align:center;padding:60px 15px;background:linear-gradient(135deg,#123b68,#075985,#08111f)}
+.hero h1{font-size:43px;color:#00e5ff}
+.hero p{line-height:1.8}
+input{width:min(90%,480px);padding:14px;border-radius:10px;border:0;margin:15px 0}
+section{padding:30px 5%}
+h2{text-align:center;color:#00e5ff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;max-width:1150px;margin:auto}
+.card{background:#14263f;border:1px solid #2a4362;border-radius:15px;overflow:hidden}
+.card img{width:100%;height:190px;object-fit:cover;background:white}
+.info{padding:17px}
+.info h3{color:#00e5ff}
+.info p{line-height:1.6;color:#d4dfef}
+.tag{color:#7eeeff;font-size:12px}
+.about{text-align:center;background:#14263f;padding:30px;line-height:1.8;border-radius:15px;max-width:750px;margin:auto}
+.btn{display:inline-block;background:#00d5ee;color:#07111f;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold;margin:8px}
+footer{text-align:center;padding:25px;background:#10213a;line-height:1.8}
+footer a{color:#00e5ff}
+.hide{display:none}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">⚡ PRO IT UZ</div>
+<nav>
+<a href="#noutbuk">Noutbuklar</a>
+<a href="#pc">Kompyuterlar</a>
+<a href="#cpu">CPU</a>
+<a href="#men">Men haqimda</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>PRO IT UZ</h1>
+<h2 style="color:white">Texnologiyalar olamiga xush kelibsiz!</h2>
+<p>Yaratdi: Uchqunbek Moxirjonov<br>Noutbuklar, kompyuterlar va protsessorlar haqida ma’lumotlar.</p>
+<input id="q" placeholder="🔎 Mahsulot qidirish..." oninput="searchItems()"><br>
+<a class="btn" href="#noutbuk">Ko‘rishni boshlash</a>
+</div>
+
+<section id="noutbuk">
+<h2>💻 NOUTBUKLAR</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80" alt="MacBook noutbuk"><div class="info"><span class="tag">APPLE</span><h3>MacBook Air</h3><p>Yengil noutbuk. O‘qish, dasturlash, internet va kundalik vazifalar uchun mos. Apple chipli modellari mavjud.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=700&q=80" alt="Lenovo noutbuk"><div class="info"><span class="tag">LENOVO</span><h3>ThinkPad / IdeaPad</h3><p>Ofis, o‘qish va ish uchun turli konfiguratsiyalar. ThinkPad ishga, IdeaPad esa kundalik foydalanishga mo‘ljallangan modellarni o‘z ichiga oladi.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=700&q=80" alt="Gaming noutbuk"><div class="info"><span class="tag">ASUS</span><h3>ROG / TUF Gaming</h3><p>O‘yinlar va grafik ishlar uchun mo‘ljallangan noutbuklar. Ayrim modellarida alohida videokarta mavjud.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=80" alt="HP noutbuk"><div class="info"><span class="tag">HP</span><h3>Pavilion / EliteBook</h3><p>Kundalik ish, o‘qish va biznes uchun noutbuklar. Xususiyatlar modelga qarab farq qiladi.</p></div></div>
+</div>
+</section>
+
+<section id="pc">
+<h2>🖥️ KOMPYUTERLAR</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=700&q=80" alt="Stol kompyuteri"><div class="info"><h3>Stol kompyuteri</h3><p>Uy va ofis uchun. Protsessor, ona plata, RAM, SSD yoki HDD, quvvat bloki va korpusdan tashkil topadi.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80" alt="Kompyuter monitori"><div class="info"><h3>Ofis kompyuteri</h3><p>Hujjatlar, internet, taqdimot va onlayn darslar uchun. SSD kompyuterning tezroq ishlashiga yordam beradi.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80" alt="Gaming PC"><div class="info"><h3>Gaming PC</h3><p>O‘yinlar uchun kuchliroq CPU, mos videokarta, yetarli RAM va yaxshi sovitish tizimi muhim.</p></div></div>
+</div>
+</section>
+
+<section id="cpu">
+<h2>🧠 PROTSESSORLAR (CPU)</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80" alt="Intel protsessor"><div class="info"><span class="tag">INTEL</span><h3>Intel Core</h3><p>Core 3, 5, 7 va 9 kabi turli darajadagi modellar bor. Avlod va aniq modeliga qarab tezligi va imkoniyatlari farq qiladi.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=700&q=80" alt="AMD protsessor"><div class="info"><span class="tag">AMD</span><h3>AMD Ryzen</h3><p>Ryzen 3, 5, 7 va 9 oilalari. O‘yin, dasturlash va professional vazifalar uchun turli modellar ishlab chiqariladi.</p></div></div>
+</div>
+</section>
+
+<section id="men">
+<h2>👨‍💻 MEN HAQIMDA</h2>
+<div class="about">
+<h3>Uchqunbek Moxirjonov</h3>
+<p>PRO IT UZ saytining yaratuvchisi.</p>
+<p>Dasturlash, kompyuterlar va yangi texnologiyalarga qiziqaman.</p>
+<a class="btn" href="https://www.instagram.com/moxirjanovv_vip63/" target="_blank" rel="noopener">📸 Instagram profilim</a>
+<p>@moxirjanovv_vip63</p>
+</div>
+</section>
+
+<footer>
+<div class="logo">PRO IT UZ</div>
+<p>Yaratdi: Uchqunbek Moxirjonov</p>
+<p>Instagram: <a href="https://www.instagram.com/moxirjanovv_vip63/">@moxirjanovv_vip63</a></p>
+<p>© 2026 PRO IT UZ</p>
+</footer>
+
+<script>
+function searchItems(){
+ let term=document.getElementById('q').value.toLowerCase();
+ document.querySelectorAll('.card').forEach(function(card){
+  card.classList.toggle('hide',!card.innerText.toLowerCase().includes(term));
+ });
+}
+</script>
+</body>
+</html>
